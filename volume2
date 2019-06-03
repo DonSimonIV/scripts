@@ -1,0 +1,24 @@
+#!/bin/bash
+#finish mute
+
+low=""
+high=""
+none=""
+mute=""
+number=$(amixer -D default get Master | grep Mono | tail -n1 | awk '{print $4}' | sed 's/[][]//g' | sed 's/%//g')
+status=$(amixer -D default get Master | grep Mono | tail -n1 | awk '{print $6}' |sed 's/[][]//g')
+
+if [[ "$status" = "off" ]]; then
+   echo "$mute"; exit
+fi
+if [[ "$number" == "100" ]]; then
+   echo "$high $number%"; exit
+fi
+if [[ "$number" > "60" ]]; then
+   echo "$high $number%"
+elif [[ "$number" < "60" && "$number" > 40 ]]; then
+   echo "$low $number%"
+else
+   echo "$none $number%"
+fi
+
