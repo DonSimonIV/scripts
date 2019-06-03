@@ -1,0 +1,65 @@
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=14
+markup=none
+
+#Need to clean names
+[cmus]
+command=/home/eltito/Documents/blocksTest/cmus2
+interval=1
+color=#db4c4c
+separator=true
+
+[weather2]
+command=/home/eltito/Documents/blocksTest/weather2
+interval=300
+color=#c9c23a
+separator=true
+
+[bandwidth2]
+command=/usr/lib/i3blocks/bandwidth2
+interval=persist
+markup=pango
+label=
+color=#add3d6
+
+[memory]
+label=Mem
+separator=true
+interval=20
+instance=mem
+color=#add3d6
+
+[cpu_usage]
+command=/usr/lib/i3blocks/cpu_usage
+interval=10
+label= CPU
+#min_width=CPU: 100.00%
+separator=false
+color=#add3d6
+
+[temperature]
+label=♨
+interval=10
+align=center
+color=#add3d6
+
+[time]
+command= date '+%H:%M %a.%d/%m'
+label=
+interval=50
+align=center
+color=#add3d6
+
+
+# bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocksÌ
+# bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
+
+#original had click-on
+[volume]
+command=/home/eltito/Documents/blocksTest/volume2
+#instance=Master
+color=#a43dff
+interval=once
+signal=10
+min_width=40
+align=center

@@ -1,0 +1,22 @@
+URxvt*font: xft:adobe source code pro for powerline:regular:pizelsize=12
+!URxvt*font: xft:bitstreamvera sans mono:size=12
+URxvt*boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=false
+URxvt*scrollTtyKeypress: true
+URxvt*scrollTtyOutput: false
+URxvt*scrollBar: false
+URxvt*skipScroll: true
+!URxvt.depth: 32
+URxvt*background: black
+URxvt.transparent: true
+URxvt.shading: 20
+URxvt.blurRadius: 5
+URxvt.antialias: true
+URxvt*foreground: White
+URxvt*colorUl: yellow
+URxvt*savelines: 8
+URxvt*tinyColor: #000000
+
+URxvt.perl-lib: /home/eltito/.urxvt/ext/
+URxvt.perl-ext-common: resize
+URxvt.keysym.C-Dwon: resize-font:smaller
+URxvt/keysym.C-Up: resize-font:bigger
