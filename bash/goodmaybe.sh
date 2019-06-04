@@ -39,14 +39,14 @@ elif [[ "$number" = "1" ]]; then
 #fi
 
 	if [[ "$name" -eq "kodi-x11" ]]; then
-		kodi-send --host=192.168.1.33 --port=9777 --action='Pause' > /dev/null
+		kodi-send --host=192.168.1.XX --port=9777 --action='Pause' > /dev/null
 		convert "$tmpbg" "$preview" -gravity center -composite "$tmpbg" 
 		i3lock -ui "$tmpbg" -n; amixer set Master toggle > /dev/null
 	fi
 fi
 
 if [[ "$number" -ge "2" ]]; then
-	kodi-send --host=192.168.1.33 --port=9777 --action='Pause' > /dev/null
+	kodi-send --host=192.168.1.XX --port=9777 --action='Pause' > /dev/null
 	cmus-remote -c -U
 	convert "$tmpbg" "$preview" -gravity center -composite "$tmpbg" 
 	i3lock -ni "$tmpbg" -n; amixer set Master toggle > /dev/null
