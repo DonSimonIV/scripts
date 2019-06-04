@@ -1,8 +1,8 @@
 #!/bin/bash
 
 image='/tmp/poster.png'
-icon="/home/eltito/Images/lock/composite.png"
-music='/home/eltito/Images/lock/musicbg.png'
+icon="$HOME/Images/lock/composite.png"
+music='$HOME/Images/lock/musicbg.png'
 status=$(cmus-remote -Q | grep 'status' | cut -d ' ' -f2-) > /dev/null
 query=$(basename -az $(cmus-remote -Q | grep file | cut -d ' ' -f2-)) > /dev/null
 
