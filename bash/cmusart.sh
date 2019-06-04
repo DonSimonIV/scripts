@@ -1,11 +1,13 @@
 #!/bin/bash
 
-#INFO
+#Not tested, the covers are random
+#no good
 
-pape='/home/eltito/Images/wallpapers/cloned/3screen.jpg'
+#INFO
+pape='$HOME/Images/wallpapers/cloned/3screen.jpg'
 image='/tmp/poster.png'
 status=$(cmus-remote -Q | grep 'status' | cut -d ' ' -f2-)
-button='/home/eltito/Images/kodi/resizemedia.png'
+button='$HOME/Images/kodi/resizemedia.png'
 
 shift
 #query="$(texturecache status | grep Title | cut - d ' ' -f2- | sed 's/://g' | awk '{$1=$1;print}')"
@@ -24,7 +26,5 @@ if [[ "$status" = "playing" ]]; then
 #	i3lock -ui "$image"
 	feh "$image"
 else
-
-echo $query
-
+    exit
 fi
