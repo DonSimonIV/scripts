@@ -23,5 +23,3 @@ elif [[ "$number" < "60" && "$number" > 40 ]]; then
 else
    echo "$none $number%"
 fi
-
-#Should do clickable mute
