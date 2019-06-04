@@ -16,7 +16,8 @@
 #
 ####################################################
 
-city="avila"
+#Change this to your city
+city="XX"
 
 
 declare -A state_icons=( \
