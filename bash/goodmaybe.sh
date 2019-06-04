@@ -1,8 +1,8 @@
 #!/bin/bash
 
-icon="/home/eltito/Images/lock/lock.png"
+icon="$HOME/Images/lock/lock.png"
 tmpbg='/tmp/screen.png'
-preview='/home/eltito/Images/kodi/buttonplay.png'
+preview='$HOME/Images/kodi/buttonplay.png'
 
 scrot -z "$tmpbg"
 
