@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-icon="/home/eltito/Images/lock/composite.png"
+icon="$HOME/Images/lock/composite.png"
 tmpbg='/tmp/screen.png'
 
 scrot -z "$tmpbg"
@@ -29,12 +29,12 @@ elif [[ "$number" = "1" ]]; then
 	fi
 
 	if [[ "$name" -eq "kodi-x11" ]]; then
-		kodi-send --host=192.168.1.33 --port=9777 --action='Stop' > /dev/null
+		kodi-send --host=192.168.1.XX --port=9777 --action='Stop' > /dev/null
 	fi
 fi
 
 if [[ "$number" -ge "2" ]]; then
-	kodi-send --host=192.168.1.33 --port=9777 --action='Stop' > /dev/null
+	kodi-send --host=192.168.1.XX --port=9777 --action='Stop' > /dev/null
 	cmus-remote -c -U
 	
 fi
