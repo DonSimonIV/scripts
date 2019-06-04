@@ -5,6 +5,8 @@ low=""
 high=""
 none=""
 mute=""
+
+#Define state and volume by amixer
 number=$(amixer -D default get Master | grep Mono | tail -n1 | awk '{print $4}' | sed 's/[][]//g' | sed 's/%//g')
 status=$(amixer -D default get Master | grep Mono | tail -n1 | awk '{print $6}' |sed 's/[][]//g')
 
@@ -22,3 +24,4 @@ else
    echo "$none $number%"
 fi
 
+#Should do clickable mute
