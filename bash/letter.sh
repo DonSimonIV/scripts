@@ -1,9 +1,9 @@
 #!/bin/bash
 
-pape='/home/eltito/Images/wallpapers/cloned/3screen.jpg'
+pape='$HOME/Images/wallpapers/cloned/3screen.jpg'
 image='/tmp/poster.png'
 status=$(cmus-remote -Q | grep 'status' | cut -d ' ' -f2-)
-button='/home/eltito/Images/kodi/resizemedia.png'
+button='$HOME/Images/kodi/resizemedia.png'
 
 shift
 #query="$(texturecache status | grep Title | cut - d ' ' -f2- | sed 's/://g' | awk '{$1=$1;print}')"
